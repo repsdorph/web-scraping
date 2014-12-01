@@ -3,14 +3,11 @@ import mechanize
 br = mechanize.Browser()
 base_url = "http://toolsfordatascience.wordpress.com/"
 
-r = br.open(base_url)
-html = r.read()
+br.open(base_url)
 
-# Show the source
-print(html)
+# Show the html
+print(br.response().read())
 print("\n")
-# or for the last page we opened
-#print br.response().read()
 
 # Show the title
 print("Title: {}\n".format(br.title()))
