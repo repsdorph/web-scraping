@@ -1,9 +1,9 @@
 import mechanize
 
 br = mechanize.Browser()
-url = "http://toolsfordatascience.wordpress.com/"
+base_url = "http://toolsfordatascience.wordpress.com/"
 
-r = br.open(url)
+r = br.open(base_url)
 html = r.read()
 
 # Show the source
