@@ -57,3 +57,9 @@ for l in br.links(url_regex='dtu'):
     # Click on the next-link
 
     # Read the next side
+
+req = br.click_link(text='2')
+br.open(req)
+
+for l in br.links(url_regex='dtu'):
+    print(l.text)
