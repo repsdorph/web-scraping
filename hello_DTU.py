@@ -1,6 +1,6 @@
 import mechanize
 
-br = mechanize.Browser()
+br = mechanize.Browser() # Make our browser-object
 base_url = "http://toolsfordatascience.wordpress.com/"
 
 br.open(base_url)
